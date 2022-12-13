@@ -8,22 +8,25 @@ const jadwalKuliah = [
 			{
 				namaMatkul: 'Algoritma & Pemrograman 1A',
 				jam: '07.30-9.30',
-				ruang:'',
+				ruang: 'G345',
 				dosen: 'I Komang Sugiarta',
 			},
 			{
 				namaMatkul: 'Algoritma & Pemrograman 1B',
 				jam: '09.30-11.30',
+				ruang: 'G345',
 				dosen: 'Diana Ikasari',
 			},
 			{
 				namaMatkul: 'Pendidikan Kewarganegaraan',
 				jam: '13.30-15.30',
+				ruang: 'G313',
 				dosen: 'Umi Kulsum',
 			},
 			{
 				namaMatkul: 'Matematika Dasar',
 				jam: '15.30-17.30',
+				ruang: 'G313',
 				dosen: 'Widianto Mutaqiem ',
 			},
 		],
@@ -38,16 +41,19 @@ const jadwalKuliah = [
 			{
 				namaMatkul: 'Ilmu Budaya Dasar',
 				jam: '09.30-11.30',
+				ruang: 'E231',
 				dosen: 'Mety',
 			},
 			{
 				namaMatkul: 'Matematika Informatika',
 				jam: '11.30-13.30',
+				ruang: 'E231',
 				dosen: 'Diah Prastiwi',
 			},
 			{
 				namaMatkul: 'Algoritma & Pemrograman 1C',
 				jam: '13.30-15.30',
+				ruang: 'E231',
 				dosen: 'Ety',
 			},
 		],
@@ -58,16 +64,19 @@ const jadwalKuliah = [
 			{
 				namaMatkul: 'Ilmu Budaya Dasar',
 				jam: '09.30-11.30',
+				ruang: 'G223',
 				dosen: 'Mety',
 			},
 			{
 				namaMatkul: 'Matematika Informatika',
 				jam: '11.30-13.30',
+				ruang: 'G223',
 				dosen: 'Diah Prastiwi',
 			},
 			{
 				namaMatkul: 'Algoritma & Pemrograman 1C',
 				jam: '13.30-15.30',
+				ruang: 'G313',
 				dosen: 'Ety',
 			},
 		],
@@ -78,16 +87,19 @@ const jadwalKuliah = [
 			{
 				namaMatkul: 'Ilmu Budaya Dasar',
 				jam: '09.30-11.30',
+				ruang: 'G313',
 				dosen: 'Mety',
 			},
 			{
 				namaMatkul: 'Matematika Informatika',
 				jam: '11.30-13.30',
+				ruang: 'G313',
 				dosen: 'Diah Prastiwi',
 			},
 			{
 				namaMatkul: 'Algoritma & Pemrograman 1C',
 				jam: '13.30-15.30',
+				ruang: 'G313',
 				dosen: 'Ety',
 			},
 		],
@@ -113,24 +125,17 @@ export const Menu = () => {
 				<div className="container mx-auto flex flex-wrap justify-evenly box-border text-center  ">
 					{jadwalKuliah.map((jadwal, index) => {
 						return (
-							<div className="w-[300px] h-[400px] bg-white-500 rounded-xl shadow-2xl m-10 border-8 pt-5">
-								Senin
+							<div
+								className="w-[300px] h-[400px] bg-white-500 rounded-xl shadow-2xl m-10 border-8 pt-5 flex flex-col  items-center "
+								key={index}
+							>
+								{jadwal.hari}
+								<h3>Matkul : {} </h3>
+								<h3>jam : 07.30-09.30</h3>
+								<h3>ruang : G345</h3>
 							</div>
 						);
 					})}
-
-					<div className="w-[300px] h-[400px] bg-white-500 rounded-xl shadow-2xl m-10 border-8 pt-5">
-						SELASA
-					</div>
-					<div className="w-[300px] h-[400px] bg-white-500 rounded-xl shadow-2xl m-10 border-8 pt-5">
-						RABU
-					</div>
-					<div className="w-[300px] h-[400px] bg-white-500 rounded-xl shadow-2xl m-10 border-8 pt-5">
-						KAMIS
-					</div>
-					<div className="w-[300px] h-[400px] bg-white-500 rounded-xl shadow-2xl m-10 border-8 pt-5">
-						JUMAT
-					</div>
 				</div>
 			</section>
 		</>
