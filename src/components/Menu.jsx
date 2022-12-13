@@ -126,13 +126,41 @@ export const Menu = () => {
 					{jadwalKuliah.map((jadwal, index) => {
 						return (
 							<div
-								className="w-[300px] h-[400px] bg-white-500 rounded-xl shadow-2xl m-10 border-8 pt-5 flex flex-col  items-center "
+								className="w-[320px] h-[520px] bg-white-500 rounded-xl shadow-2xl m-10 border-8 pt-5 flex flex-col  items-center "
 								key={index}
 							>
 								{jadwal.hari}
-								<h3>Matkul : {} </h3>
-								<h3>jam : 07.30-09.30</h3>
-								<h3>ruang : G345</h3>
+								{jadwal.matkul.map((matkul, index) => {
+									return (
+										<div
+											key={index}
+											className="flex flex-col items-start mb-3 px-2 w-full box-border "
+										>
+											<table>
+												<tr>
+													<td>Matkul</td>
+													<td> : </td>
+													<td>{matkul.namaMatkul}</td>
+												</tr>
+												<tr>
+													<td>Jam</td>
+													<td>:</td>
+													<td>{matkul.jam}</td>
+												</tr>
+												<tr>
+													<td>Ruang</td>
+													<td>:</td>
+													<td>{matkul.ruang}</td>
+												</tr>
+												<tr>
+													<td>Dosen</td>
+													<td>:</td>
+													<td>{matkul.dosen}</td>
+												</tr>
+											</table>
+										</div>
+									);
+								})}
 							</div>
 						);
 					})}
