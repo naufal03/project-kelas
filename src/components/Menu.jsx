@@ -6,9 +6,7 @@ export const Menu = () => {
 			<div className="container-xl bg-fixed">
 				<img src={gambar} alt="" className="w-screen h-screen object-cover " />
 				<p>
-					Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum ad
-					adipisci culpa unde mollitia, sunt exercitationem facere porro iusto
-					illo?
+					testing branch
 				</p>
 			</div>
 		</section>
