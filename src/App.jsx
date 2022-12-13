@@ -8,11 +8,9 @@ function App() {
 
 	return (
 		// page menu
-		<div>
-			<div>
-				<Menu />
-			</div>
-		</div>
+		<>
+			<Menu />
+		</>
 	);
 }
 
