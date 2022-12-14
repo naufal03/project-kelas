@@ -1,5 +1,6 @@
 import React from 'react';
 import hero from '../../public/hero.jpg';
+import Tugas from './Tugas';
 
 const jadwalKuliah = [
 	{
@@ -116,12 +117,25 @@ export const Menu = () => {
 				/>
 				<div className="container">
 					<div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 items-start w-full  ">
-						<h2 className="text-white text-4xl  ">Jadwal Pelajaran</h2>
+						<h2 className="text-white xl:text-7xl lg:text-6xl md:text-4xl text-3xl text-center">Selamat Datang di 1IA10</h2>
+					</div>
+				</div>
+			</section>
+			<section>
+				<div className=' flex justify-evenly pt-10'>
+					<div className=' border-collapse bg-slate-500 rounded-full w-64 h-20 pt-5'>
+						<a href="/jadwal">
+							<h1 className=' text-center text-white text-xl'>Jadwal Matkul</h1>
+						</a>
+					</div>
+					<div className=' border-collapse bg-slate-500 rounded-full w-64 h-20 pt-5'>
+						<a href="/ListTugas">
+							<h1 className=' text-center text-white text-xl'>List Tugas</h1>
+						</a>
 					</div>
 				</div>
 			</section>
 			<section id="jadwal" className="pt-10 ">
-				<h1>Jadwal cuy</h1>
 				<div className="container mx-auto flex flex-wrap justify-evenly box-border text-center  ">
 					{jadwalKuliah.map((jadwal, index) => {
 						return (
@@ -164,6 +178,9 @@ export const Menu = () => {
 							</div>
 						);
 					})}
+				</div>
+				<div id='Tugass'>
+					<h1 className='text-4xl'><Tugas/></h1>
 				</div>
 			</section>
 		</>
