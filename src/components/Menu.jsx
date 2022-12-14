@@ -2,6 +2,79 @@ import React from 'react';
 import hero from '../../public/hero.jpg';
 import Tugas from './Tugas';
 
+const dosen = [
+	{
+		nama: 'I KOMANG SUGIARTHA',
+		hp: '081234567890',
+		vClass: 'https://v-class.gunadarma.ac.id/login/index.php',
+	},
+	{
+		nama: 'DIANA IKASARI',
+		hp: '081234567890',
+		vClass: 'https://v-class.gunadarma.ac.id/login/index.php',
+	},
+	{
+		nama: 'UMI KULSUM',
+		hp: '081234567890',
+		vClass: 'https://v-class.gunadarma.ac.id/login/index.php',
+	},
+	{
+		nama: 'WIDIANTO MUTTAQIEN M ',
+		hp: '081234567890',
+		vClass: 'https://v-class.gunadarma.ac.id/login/index.php',
+	},
+	{
+		nama: 'METI NURHAYATI',
+		hp: '081234567890',
+		vClass: 'https://v-class.gunadarma.ac.id/login/index.php',
+	},
+	{
+		nama: 'DIAH PRASTIWI',
+		hp: '081234567890',
+		vClass: 'https://v-class.gunadarma.ac.id/login/index.php',
+	},
+	{
+		nama: 'ETY SUTANTY',
+		hp: '081234567890',
+		vClass: 'https://v-class.gunadarma.ac.id/login/index.php',
+	},
+	{
+		nama: 'ESTI SETIYANINGSIH',
+		hp: '081234567890',
+		vClass: 'https://v-class.gunadarma.ac.id/login/index.php',
+	},
+	{
+		nama: 'SEPTIAN DWI PUTRI',
+		hp: '081234567890',
+		vClass: 'https://v-class.gunadarma.ac.id/login/index.php',
+	},
+	{
+		nama: 'SARI NOORLIMA YANTI',
+		hp: '081234567890',
+		vClass: 'https://v-class.gunadarma.ac.id/login/index.php',
+	},
+	{
+		nama: "MU'MINATUS FITRIATI FIRDAUS",
+		hp: '081234567890',
+		vClass: 'https://v-class.gunadarma.ac.id/login/index.php',
+	},
+	{
+		nama: 'ORITA DWI PURBIYANTI',
+		hp: '081234567890',
+		vClass: 'https://v-class.gunadarma.ac.id/login/index.php',
+	},
+	{
+		nama: 'SANDY SURYO PRAYOGO',
+		hp: '081234567890',
+		vClass: 'https://v-class.gunadarma.ac.id/login/index.php',
+	},
+	{
+		nama: 'AGUS HADI ISMOYO ',
+		hp: '081234567890',
+		vClass: 'https://v-class.gunadarma.ac.id/login/index.php',
+	},
+]
+
 const jadwalKuliah = [
 	{
 		hari: 'Senin',
@@ -10,25 +83,25 @@ const jadwalKuliah = [
 				namaMatkul: 'Algoritma & Pemrograman 1A',
 				jam: '07.30-9.30',
 				ruang: 'G345',
-				dosen: 'I KOMANG SUGIARTHA',
+				dosen: dosen[0]
 			},
 			{
 				namaMatkul: 'Algoritma & Pemrograman 1B',
 				jam: '09.30-11.30',
 				ruang: 'G345',
-				dosen: 'DIANA IKASARI',
+				dosen: dosen[1]
 			},
 			{
 				namaMatkul: 'Pendidikan Kewarganegaraan',
 				jam: '13.30-15.30',
 				ruang: 'G313',
-				dosen: 'UMI KULSUM',
+				dosen: dosen[2]
 			},
 			{
 				namaMatkul: 'Matematika Dasar 1',
 				jam: '15.30-17.30',
 				ruang: 'G313',
-				dosen: 'WIDIANTO MUTTAQIEN M ',
+				dosen: dosen[3]
 			},
 		],
 	},
@@ -43,19 +116,19 @@ const jadwalKuliah = [
 				namaMatkul: 'Ilmu Budaya Dasar',
 				jam: '09.30-11.30',
 				ruang: 'E231',
-				dosen: 'METI NURHAYATI',
+				dosen: dosen[4]
 			},
 			{
 				namaMatkul: 'Matematika Informatika 1 **',
 				jam: '11.30-13.30',
 				ruang: 'E231',
-				dosen: 'DIAH PRASTIWI',
+				dosen: dosen[5]
 			},
 			{
 				namaMatkul: 'Algoritma & Pemrograman 1C',
 				jam: '13.30-15.30',
 				ruang: 'E231',
-				dosen: 'ETY SUTANTY',
+				dosen: dosen[6]
 			},
 		],
 	},
@@ -66,19 +139,19 @@ const jadwalKuliah = [
 				namaMatkul: 'Peng. Tekno. Komp. & Inf. A **',
 				jam: '07.30-09.30',
 				ruang: 'G223',
-				dosen: 'ESTI SETIYANINGSIH',
+				dosen: dosen[7]
 			},
 			{
 				namaMatkul: 'Bahasa Inggris',
 				jam: '09.30-11.30',
 				ruang: 'G223',
-				dosen: 'SEPTIAN DWI PUTRI',
+				dosen: dosen[8]
 			},
 			{
 				namaMatkul: 'Peng. Tekno. Komp. & Inf. C **',
 				jam: '12.30-14.30',
 				ruang: 'G344',
-				dosen: 'SARI NOORLIMA YANTI',
+				dosen: dosen[9]
 			},
 		],
 	},
@@ -89,25 +162,25 @@ const jadwalKuliah = [
 				namaMatkul: 'Pendidikan Agama Islam	',
 				jam: '07.30-9.30',
 				ruang: 'E427',
-				dosen: "MU'MINATUS FITRIATI FIRDAUS",
+				dosen: dosen[10]
 			},
 			{
 				namaMatkul: 'Peng. Tekno. Komp. & Inf. B **	',
 				jam: '09.30-11.30',
 				ruang: 'E427',
-				dosen: 'ORITA DWI PURBIYANTI',
+				dosen: dosen[11]
 			},
 			{
 				namaMatkul: 'Fisika & Kimia Dasar 1A',
 				jam: '13.30-15.30',
 				ruang: 'E427',
-				dosen: 'SANDY SURYO PRAYOGO',
+				dosen: dosen[12]
 			},
 			{
 				namaMatkul: 'Fisika & Kimia Dasar 1B	',
 				jam: '15.30-17.30',
 				ruang: 'E427',
-				dosen: 'AGUS HADI ISMOYO ',
+				dosen: dosen[13]
 			},
 		],
 	},
@@ -159,7 +232,7 @@ export const Menu = () => {
 													<tr>
 														<td>Dosen</td>
 														<td>:</td>
-														<td>{matkul.dosen}</td>
+														<td>{matkul.dosen.nama}</td>
 													</tr>
 												</table>
 											</div>
