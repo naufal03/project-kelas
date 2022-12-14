@@ -198,17 +198,18 @@ export const Menu = () => {
           </div>
         </section>
 
-        <section id="jadwal" className="pt-10 ">
-          <div className="container mx-auto flex flex-wrap justify-evenly text-center   ">
+        <section id="jadwal" className="pt-10">
+          <div className="container mx-auto flex flex-wrap justify-evenly text-center">
             {jadwalKuliah.map((jadwal, index) => {
+              if (jadwal.matkul.length === 0) return <div key={index}></div>;
               return (
                 <div
-                  className="w-[320px] h-[520px]  border shadow-lg shadow-black rounded-3xl m-5 box-content p-5 "
+                  className="w-[320px] h-[630px]  border shadow-lg shadow-black bg-blue-100 text-black rounded-2xl m-5 box-content px-5 py-3"
                   key={index}>
-                  {jadwal.hari}
+                  <div className="text-xl font-bold mb-3">{jadwal.hari.toUpperCase()}</div>
                   {jadwal.matkul.map((matkul, index) => {
                     return (
-                      <div key={index} className="m-4 box-content ">
+                      <div key={index} className="mb-4 box-content bg-white rounded-xl p-3">
                         <table className="flex flex-col items-start ">
                           <tr className="">
                             <td>Matkul</td>
