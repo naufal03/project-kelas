@@ -192,14 +192,15 @@ export const Menu = () => {
         <section>
           <div className="container-xl">
             <div className="flex flex-col justify-center items-center mx-auto w-full h-screen ">
-              <h1 className="text-4xl xl:text-7xl md:text-5xl">Selamat datang Di Website</h1>
-              <h3 className="text-4xl mt-4">1IA10</h3>
+              <h1 className="text-4xl font-bold xl:text-7xl md:text-5xl">Selamat datang Di Website</h1>
+              <h3 className="text-4xl mt-4 xl:text-5xl font-semibold">1IA10</h3>
             </div>
           </div>
         </section>
 
         <section id="jadwal" className="pt-10">
-          <div className="container mx-auto flex flex-wrap justify-evenly text-center">
+					<h1 className="text-4xl font-bold  text-center mb-20 ">Jadwal Pelajaran</h1>
+          <div className="container mx-auto flex flex-wrap justify-center text-center">
             {jadwalKuliah.map((jadwal, index) => {
               if (jadwal.matkul.length === 0) return <div key={index}></div>;
               return (
@@ -209,12 +210,12 @@ export const Menu = () => {
                   <div className="text-xl font-bold mb-3">{jadwal.hari.toUpperCase()}</div>
                   {jadwal.matkul.map((matkul, index) => {
                     return (
-                      <div key={index} className="mb-4 box-content bg-white rounded-xl p-3">
+                      <div key={index} className="mb-4 box-content bg-white border border-black  rounded-xl p-3">
                         <table className="flex flex-col items-start ">
                           <tr className="">
                             <td>Matkul</td>
                             <td>:</td>
-                            <td> {matkul.namaMatkul}</td>
+                            <td>{matkul.namaMatkul}</td>
                           </tr>
                           <tr>
                             <td>Jam</td>
