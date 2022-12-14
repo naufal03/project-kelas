@@ -9,25 +9,25 @@ const jadwalKuliah = [
 				namaMatkul: 'Algoritma & Pemrograman 1A',
 				jam: '07.30-9.30',
 				ruang: 'G345',
-				dosen: 'I Komang Sugiarta',
+				dosen: 'I KOMANG SUGIARTHA',
 			},
 			{
 				namaMatkul: 'Algoritma & Pemrograman 1B',
 				jam: '09.30-11.30',
 				ruang: 'G345',
-				dosen: 'Diana Ikasari',
+				dosen: 'DIANA IKASARI',
 			},
 			{
 				namaMatkul: 'Pendidikan Kewarganegaraan',
 				jam: '13.30-15.30',
 				ruang: 'G313',
-				dosen: 'Umi Kulsum',
+				dosen: 'UMI KULSUM',
 			},
 			{
-				namaMatkul: 'Matematika Dasar',
+				namaMatkul: 'Matematika Dasar 1',
 				jam: '15.30-17.30',
 				ruang: 'G313',
-				dosen: 'Widianto Mutaqiem ',
+				dosen: 'WIDIANTO MUTTAQIEN M ',
 			},
 		],
 	},
@@ -42,19 +42,19 @@ const jadwalKuliah = [
 				namaMatkul: 'Ilmu Budaya Dasar',
 				jam: '09.30-11.30',
 				ruang: 'E231',
-				dosen: 'Mety',
+				dosen: 'METI NURHAYATI',
 			},
 			{
-				namaMatkul: 'Matematika Informatika',
+				namaMatkul: 'Matematika Informatika 1 **',
 				jam: '11.30-13.30',
 				ruang: 'E231',
-				dosen: 'Diah Prastiwi',
+				dosen: 'DIAH PRASTIWI',
 			},
 			{
 				namaMatkul: 'Algoritma & Pemrograman 1C',
 				jam: '13.30-15.30',
 				ruang: 'E231',
-				dosen: 'Ety',
+				dosen: 'ETY SUTANTY',
 			},
 		],
 	},
@@ -62,22 +62,22 @@ const jadwalKuliah = [
 		hari: 'Kamis',
 		matkul: [
 			{
-				namaMatkul: 'Ilmu Budaya Dasar',
+				namaMatkul: 'Peng. Tekno. Komp. & Inf. A **',
+				jam: '07.30-09.30',
+				ruang: 'G223',
+				dosen: 'ESTI SETIYANINGSIH',
+			},
+			{
+				namaMatkul: 'Bahasa Inggris',
 				jam: '09.30-11.30',
 				ruang: 'G223',
-				dosen: 'Mety',
+				dosen: 'SEPTIAN DWI PUTRI',
 			},
 			{
-				namaMatkul: 'Matematika Informatika',
-				jam: '11.30-13.30',
-				ruang: 'G223',
-				dosen: 'Diah Prastiwi',
-			},
-			{
-				namaMatkul: 'Algoritma & Pemrograman 1C',
-				jam: '13.30-15.30',
-				ruang: 'G313',
-				dosen: 'Ety',
+				namaMatkul: 'Peng. Tekno. Komp. & Inf. C **',
+				jam: '12.30-14.30',
+				ruang: 'G344',
+				dosen: 'SARI NOORLIMA YANTI',
 			},
 		],
 	},
@@ -85,30 +85,37 @@ const jadwalKuliah = [
 		hari: 'Jum`at',
 		matkul: [
 			{
-				namaMatkul: 'Ilmu Budaya Dasar',
+				namaMatkul: 'Pendidikan Agama Islam	',
+				jam: '07.30-9.30',
+				ruang: 'E427',
+				dosen: "MU'MINATUS FITRIATI FIRDAUS",
+			},
+			{
+				namaMatkul: 'Peng. Tekno. Komp. & Inf. B **	',
 				jam: '09.30-11.30',
-				ruang: 'G313',
-				dosen: 'Mety',
+				ruang: 'E427',
+				dosen: 'ORITA DWI PURBIYANTI',
 			},
 			{
-				namaMatkul: 'Matematika Informatika',
-				jam: '11.30-13.30',
-				ruang: 'G313',
-				dosen: 'Diah Prastiwi',
-			},
-			{
-				namaMatkul: 'Algoritma & Pemrograman 1C',
+				namaMatkul: 'Fisika & Kimia Dasar 1A',
 				jam: '13.30-15.30',
-				ruang: 'G313',
-				dosen: 'Ety',
+				ruang: 'E427',
+				dosen: 'SANDY SURYO PRAYOGO',
+			},
+			{
+				namaMatkul: 'Fisika & Kimia Dasar 1B	',
+				jam: '15.30-17.30',
+				ruang: 'E427',
+				dosen: 'AGUS HADI ISMOYO ',
 			},
 		],
 	},
 ];
+
 export const Menu = () => {
 	return (
 		<>
-			<section className="relative">
+			{/* <section className="relative">
 				<img
 					src={hero}
 					alt="cover"
@@ -116,56 +123,69 @@ export const Menu = () => {
 				/>
 				<div className="container">
 					<div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 items-start w-full  ">
-						<h2 className="text-white text-4xl  ">Jadwal Pelajaran</h2>
+						<h2 className="text-white text-6xl text-center">
+							Selamat Datang Di Website
+						</h2>
+						<h2 className="text-white text-5xl mt-4 text-center">1IA10</h2>
 					</div>
 				</div>
-			</section>
-			<section id="jadwal" className="pt-10 ">
-				<h1>Jadwal cuy</h1>
-				<div className="container mx-auto flex flex-wrap justify-evenly box-border text-center  ">
-					{jadwalKuliah.map((jadwal, index) => {
-						return (
-							<div
-								className="w-[320px] h-[520px] bg-white-500 rounded-xl shadow-2xl m-10 border-8 pt-5 flex flex-col  items-center "
-								key={index}
-							>
-								{jadwal.hari}
-								{jadwal.matkul.map((matkul, index) => {
-									return (
-										<div
-											key={index}
-											className="flex flex-col items-start mb-3 px-2 w-full box-border "
-										>
-											<table>
-												<tr>
-													<td>Matkul</td>
-													<td> : </td>
-													<td>{matkul.namaMatkul}</td>
-												</tr>
-												<tr>
-													<td>Jam</td>
-													<td>:</td>
-													<td>{matkul.jam}</td>
-												</tr>
-												<tr>
-													<td>Ruang</td>
-													<td>:</td>
-													<td>{matkul.ruang}</td>
-												</tr>
-												<tr>
-													<td>Dosen</td>
-													<td>:</td>
-													<td>{matkul.dosen}</td>
-												</tr>
-											</table>
-										</div>
-									);
-								})}
-							</div>
-						);
-					})}
-				</div>
-			</section>
+			</section> */}
+
+			<div className="bg-gradient-to-r from-[#4B56D2] to-[#472183] text-white">
+				<section>
+					<div className="container-xl">
+						<div className="flex flex-col justify-center items-center mx-auto w-full h-screen ">
+							<h1 className="text-4xl xl:text-7xl md:text-5xl">
+								Selamat datang Di Website
+							</h1>
+							<h3 className="text-4xl mt-4">1IA10</h3>
+						</div>
+					</div>
+				</section>
+
+				<section id="jadwal" className="pt-10 ">
+					<div className="container mx-auto flex flex-wrap justify-evenly text-center   ">
+						{jadwalKuliah.map((jadwal, index) => {
+							return (
+								<div
+									className="w-[320px] h-[520px]  border shadow-lg shadow-black rounded-3xl m-5 box-content p-5 "
+									key={index}
+								>
+									{jadwal.hari}
+									{jadwal.matkul.map((matkul, index) => {
+										return (
+											<div key={index} className="m-4 box-content ">
+												<table className="flex flex-col items-start ">
+													<tr className="">
+														<td>Matkul</td>
+														<td>:</td>
+														<td> {matkul.namaMatkul}</td>
+													</tr>
+													<tr>
+														<td>Jam</td>
+														<td>:</td>
+														<td>{matkul.jam}</td>
+													</tr>
+													<tr>
+														<td>Ruang</td>
+														<td>:</td>
+														<td>{matkul.ruang}</td>
+													</tr>
+													<tr>
+														<td>Dosen</td>
+														<td>:</td>
+														<td>{matkul.dosen}</td>
+													</tr>
+												</table>
+											</div>
+										);
+									})}
+								</div>
+							);
+						})}
+					</div>
+				</section>
+			</div>
 		</>
 	);
 };
