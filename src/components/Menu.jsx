@@ -169,6 +169,9 @@ export const Menu = () => {
 							);
 						})}
 					</div>
+						<div id='Tugass' className=' pt-20'>
+							<Tugas/>
+						</div>
 				</section>
 			</div>
 		</>

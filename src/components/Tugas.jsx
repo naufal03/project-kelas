@@ -1,10 +1,31 @@
 import React from 'react'
 
 const Tugas = () => {
+  
   return (
-    <section className='contianer mx-auto'>    
-        <div className=' flex justify-center'>
-            <h1 className=' text-4xl'>farhan</h1>
+    <section className=''>    
+        <div className='contianer mx-auto flex justify-evenly w-full h-full'>
+            <table className=' w-[200px] h-[100px]'>
+                <tr className=''>
+                  <td className="  border rounded-3xl m-5 box-content p-5 bg-black">
+                    <h1>daya ganteng</h1>
+                  </td>
+                </tr>
+            </table>
+            <table className=' w-[200px] h-[100px]'>
+                <tr className=''>
+                  <td className="  border  rounded-3xl m-5 box-content p-5 bg-black">
+                    <h1>daya ganteng</h1>
+                  </td>
+                </tr>
+            </table>
+            <table className=' w-[200px] h-[100px]'>
+                <tr className=''>
+                  <td className="  border  rounded-3xl m-5 box-content p-5 bg-black">
+                    <h1>daya ganteng</h1>
+                  </td>
+                </tr>
+            </table>
         </div>
     </section>
   )
