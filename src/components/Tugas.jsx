@@ -24,7 +24,7 @@ const headerMatkul = [
 
 const Tugas = () => {
   return (
-    <section className="">
+    <section className="bg-gradient-to-r from-[#4B56D2] to-[#472183] text-white">
       <div className="contianer mx-auto flex justify-evenly w-full h-full rounded-xl pt-8">
         <div className=" flex flex-col space-y-16">
           <h1 className=" text-xl text-center">List Tugas Matkul</h1>
