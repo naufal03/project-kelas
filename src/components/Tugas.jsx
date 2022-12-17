@@ -1,5 +1,4 @@
 import React from 'react';
-import { BsArrowRight } from 'react-icons/Bs';
 
 const headerMatkul = [
   {
@@ -19,77 +18,64 @@ const headerMatkul = [
     headermatkul: 'Bahasa Inggris',
     jadwal1: '20 Desember 2022',
     tanggal2: '5 Januari 2023'
+  },
+  {
+    id: 4,
+    headermatkul: 'Bahasa Inggris',
+    jadwal1: '20 Desember 2022',
+    tanggal2: '5 Januari 2023'
+  },
+  {
+    id: 5,
+    headermatkul: 'Bahasa Inggris',
+    jadwal1: '20 Desember 2022',
+    tanggal2: '5 Januari 2023'
+  },
+  {
+    id: 6,
+    headermatkul: 'Bahasa Inggris',
+    jadwal1: '20 Desember 2022',
+    tanggal2: '5 Januari 2023'
+  },
+  {
+    id: 6,
+    headermatkul: 'Bahasa Inggris',
+    jadwal1: '20 Desember 2022',
+    tanggal2: '5 Januari 2023'
   }
 ];
 
 const Tugas = () => {
   return (
-    <section className="bg-gradient-to-r from-[#4B56D2] to-[#472183] text-white">
-      <div className="contianer mx-auto flex justify-evenly w-full h-full rounded-xl pt-8">
-        <div className=" flex flex-col space-y-16">
-          <h1 className=" text-xl text-center">List Tugas Matkul</h1>
-          <div>
-            <table className=" w-[350px] h-[500px] outline outline-offset-2 outline-blue-900 ring-offset-2 ring-4 rounded-2xl ">
-              {headerMatkul.map((header) => {
-                return (
-                  <tr className="" key={header.id}>
-                    <td className="  border rounded-3xl m-5 box-content p-5 bg-[#D0B8A8] space-y-7">
-                      <td className="  border rounded-3xl m-4 box-content p-4 bg-red-700 flex justify-center">
-                        <h1>{header.headermatkul}</h1>
-                      </td>
-                    </td>
-                  </tr>
-                );
-              })}
-            </table>
-          </div>
-        </div>
-        <div className=" flex items-center">
-          <h1 className=" text-4xl">
-            <BsArrowRight />
-          </h1>
-        </div>
-        <div className=" flex flex-col space-y-16">
-          <h1 className=" text-xl text-center">Jadwal Diberi Tugas</h1>
-          <div>
-            <table className=" w-[350px] h-[500px] outline outline-offset-2 outline-pink-500 ring-offset-2 ring-4 rounded-2xl">
-              {headerMatkul.map((header) => {
-                return (
-                  <tr className="" key={header.id}>
-                    <td className="  border rounded-3xl m-5 box-content p-5 bg-[#D0B8A8] space-y-7">
-                      <td className="  border rounded-3xl m-4 box-content p-4 bg-red-800 flex justify-center">
-                        <h1>{header.jadwal1}</h1>
-                      </td>
-                    </td>
-                  </tr>
-                );
-              })}
-            </table>
-          </div>
-        </div>
-        <div className=" flex items-center">
-          <h1 className=" text-4xl">
-            <BsArrowRight />
-          </h1>
-        </div>
-        <div className=" flex flex-col space-y-16">
-          <h1 className=" text-xl text-center">Jadwal Deadline Tugas</h1>
-          <div>
-            <table className=" w-[350px] h-[500px] outline outline-offset-2 outline-pink-500 ring-offset-2 ring-4 rounded-2xl">
-              {headerMatkul.map((header) => {
-                return (
-                  <tr className="" key={header.id}>
-                    <td className="  border rounded-3xl m-5 box-content p-5 bg-[#D0B8A8] space-y-7">
-                      <td className="  border rounded-3xl m-4 box-content p-4 bg-red-700 flex justify-center">
-                        <h1 className="">{header.tanggal2}</h1>
-                      </td>
-                    </td>
-                  </tr>
-                );
-              })}
-            </table>
-          </div>
-        </div>
+    <section className="bg-gradient-to-r from-[#4B56D2] to-[#472183] text-white h-full">
+      <h1 className=" text-4xl  text-center py-12 font-bold">LIST TUGAS - TUGAS </h1>
+      <div className="container mx-auto flex justify-center">
+        <table className=" border-collapse shadow-2xl shadow-black mx-10">
+          <thead className=" ">
+            <tr className="">
+              <th className=" border xl:px-36 md:px-14 px-4 py-5 xl:text-2xl md:text-xl text-lg">
+                List Matkul
+              </th>
+              <th className=" border xl:px-36 md:px-14 px-4 py-5 xl:text-2xl md:text-xl text-lg">
+                Start
+              </th>
+              <th className=" border xl:px-36 md:px-14 px-4 py-5 xl:text-2xl md:text-xl text-lg">
+                Deadline
+              </th>
+            </tr>
+          </thead>
+          {headerMatkul.map((matkul) => {
+            return (
+              <tbody key={matkul.id} className=" ">
+                <tr className="">
+                  <td className="border xl:px-28 md:px-14 px-4 py-4">{matkul.headermatkul}</td>
+                  <td className="border xl:px-28 md:px-14 px-4 py-4">{matkul.jadwal1}</td>
+                  <td className="border xl:px-28 md:px-14 px-4 py-4">{matkul.tanggal2}</td>
+                </tr>
+              </tbody>
+            );
+          })}
+        </table>
       </div>
     </section>
   );
