@@ -48,23 +48,29 @@ const headerMatkul = [
 const Tugas = () => {
   return (
     <section className="bg-gradient-to-r from-[#4B56D2] to-[#472183] text-white h-full">
-      <h1 className=" text-4xl  text-center py-12">LIST TUGAS - TUGAS </h1>
+      <h1 className=" text-4xl  text-center py-12 font-bold">LIST TUGAS - TUGAS </h1>
       <div className="container mx-auto flex justify-center">
-        <table className=" border-collapse shadow-2xl shadow-black">
-          <thead className="">
+        <table className=" border-collapse shadow-2xl shadow-black mx-10">
+          <thead className=" ">
             <tr className="">
-              <th className=" border xl:px-36 md:px-14 px-4 py-5">List Matkul</th>
-              <th className=" border xl:px-36 md:px-14 px-4 py-5">Tanggal Dikasih Tugas</th>
-              <th className=" border xl:px-36 md:px-14 px-4 py-5">Tanggal Deadline Tugas</th>
+              <th className=" border xl:px-36 md:px-14 px-4 py-5 xl:text-2xl md:text-xl text-lg">
+                List Matkul
+              </th>
+              <th className=" border xl:px-36 md:px-14 px-4 py-5 xl:text-2xl md:text-xl text-lg">
+                Start
+              </th>
+              <th className=" border xl:px-36 md:px-14 px-4 py-5 xl:text-2xl md:text-xl text-lg">
+                Deadline
+              </th>
             </tr>
           </thead>
           {headerMatkul.map((matkul) => {
             return (
-              <tbody key={matkul.id}>
-                <tr>
-                  <td className="border xl:px-36 md:px-14 px-4 py-5">{matkul.headermatkul}</td>
-                  <td className="border xl:px-36 md:px-14 px-4 py-5">{matkul.jadwal1}</td>
-                  <td className="border xl:px-36 md:px-14 px-4 py-5">{matkul.tanggal2}</td>
+              <tbody key={matkul.id} className=" ">
+                <tr className="">
+                  <td className="border xl:px-28 md:px-14 px-4 py-4">{matkul.headermatkul}</td>
+                  <td className="border xl:px-28 md:px-14 px-4 py-4">{matkul.jadwal1}</td>
+                  <td className="border xl:px-28 md:px-14 px-4 py-4">{matkul.tanggal2}</td>
                 </tr>
               </tbody>
             );
