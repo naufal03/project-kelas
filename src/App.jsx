@@ -1,4 +1,5 @@
 import Jadwal from './components/Jadwal';
+import Login from './components/Login';
 import { Menu } from './components/Menu';
 import Tugas from './components/Tugas';
 
@@ -9,6 +10,7 @@ function App() {
       <Menu />
       <Jadwal />
       <Tugas />
+      <Login />
     </>
   );
 }

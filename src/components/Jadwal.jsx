@@ -203,7 +203,9 @@ export default function Jadwal() {
       <section
         id="jadwal"
         className="bg-gradient-to-r from-[#4B56D2] to-[#472183] text-white pt-10 ">
-        <h1 className="text-4xl font-bold  text-center mb-20 ">Jadwal Pelajaran cuy</h1>
+        <h1 className="text-2xl xl:text-4xl font-bold  text-center mb-10 xl:mb-20 ">
+          Jadwal Pelajaran
+        </h1>
         <div className="container mx-auto flex flex-wrap justify-center text-center">
           {jadwalKuliah.map((jadwal, index) => {
             if (jadwal.matkul.length === 0) return <div key={index}></div>;

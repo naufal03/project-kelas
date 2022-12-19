@@ -4,43 +4,43 @@ const headerMatkul = [
   {
     id: 1,
     headermatkul: 'Matematika Informatika (ilab)',
-    jadwal1: '12 Desember 2022',
+    informasi: ['mandi', 'makan'],
     tanggal2: '25 Desember 2022'
   },
   {
     id: 2,
     headermatkul: 'Algoritma Pemrograman',
-    jadwal1: '9 Desember 2022',
+    informasi: '9 Desember 2022',
     tanggal2: '20 Desember 2022'
   },
   {
     id: 3,
     headermatkul: 'Bahasa Inggris',
-    jadwal1: '20 Desember 2022',
+    informasi: '20 Desember 2022',
     tanggal2: '5 Januari 2023'
   },
   {
     id: 4,
     headermatkul: 'Bahasa Inggris',
-    jadwal1: '20 Desember 2022',
+    informasi: '20 Desember 2022',
     tanggal2: '5 Januari 2023'
   },
   {
     id: 5,
     headermatkul: 'Bahasa Inggris',
-    jadwal1: '20 Desember 2022',
+    informasi: '20 Desember 2022',
     tanggal2: '5 Januari 2023'
   },
   {
     id: 6,
     headermatkul: 'Bahasa Inggris',
-    jadwal1: '20 Desember 2022',
+    informasi: '20 Desember 2022',
     tanggal2: '5 Januari 2023'
   },
   {
     id: 6,
     headermatkul: 'Bahasa Inggris',
-    jadwal1: '20 Desember 2022',
+    informasi: '20 Desember 2022',
     tanggal2: '5 Januari 2023'
   }
 ];
@@ -48,8 +48,8 @@ const headerMatkul = [
 const Tugas = () => {
   return (
     <section className="bg-gradient-to-r from-[#4B56D2] to-[#472183] text-white h-full">
-      <h1 className=" text-4xl  text-center py-12 font-bold">LIST TUGAS - TUGAS </h1>
-      <div className="container mx-auto flex justify-center">
+      <h1 className=" text-2xl xl:text-4xl  text-center py-12 font-bold">LIST TUGAS - TUGAS </h1>
+      <div className="container mx-auto flex justify-center  ">
         <table className=" border-collapse shadow-2xl shadow-black mx-10">
           <thead className=" ">
             <tr className="">
@@ -57,7 +57,7 @@ const Tugas = () => {
                 List Matkul
               </th>
               <th className=" border xl:px-36 md:px-14 px-4 py-5 xl:text-2xl md:text-xl text-lg">
-                Start
+                Information
               </th>
               <th className=" border xl:px-36 md:px-14 px-4 py-5 xl:text-2xl md:text-xl text-lg">
                 Deadline
@@ -69,7 +69,12 @@ const Tugas = () => {
               <tbody key={matkul.id} className=" ">
                 <tr className="">
                   <td className="border xl:px-28 md:px-14 px-4 py-4">{matkul.headermatkul}</td>
-                  <td className="border xl:px-28 md:px-14 px-4 py-4">{matkul.jadwal1}</td>
+                  <td className="border xl:px-28 md:px-14 px-4 py-4">
+                    <ul className="list-disc ml-2">
+                      <li>Tugas Membuat PPT min 30 slide</li>
+                      <li>Dikerjakan di Google Slide</li>
+                    </ul>
+                  </td>
                   <td className="border xl:px-28 md:px-14 px-4 py-4">{matkul.tanggal2}</td>
                 </tr>
               </tbody>
